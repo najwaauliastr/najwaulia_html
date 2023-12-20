@@ -1,0 +1,136 @@
+  <!DOCTYPE html>
+<html>	
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: #5E7496;
+		}
+		#container{
+			width: 1220px;
+			height: 800%;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			margin: auto;
+		}
+		#header{   
+			height: 450px;
+			background-color: #5E7496;
+			background-image: url("header.png");
+			background-size: 100% 100%;
+			padding-top: 30px;
+		}
+		#nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #000;
+		}
+		#nav li{
+			float: left;
+		}
+		#nav li a{
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			padding: 17px 15px;
+			text-decoration: none;
+		}
+		#nav li a:hover{
+			background-color: yellow;
+		}
+		#content{
+			height: 835px;
+			width: 50%;
+			background-color: #3F5F90;
+			float: left;
+		}
+		#content p{
+			font-size: 20px;
+			text-align: justify;
+			padding: 5px 10px 5px 10px;
+		}
+		#sidebar{
+			height: 835px;
+			width: 50%;
+			background-color:  #3F5F90;
+			float: right;    
+		} 
+		#sidebar p{
+         	font-size: 20px;
+         	text-align: justify;
+         	padding: 5px 10px 5px 10px;
+		}
+		#sidebar img{
+			height: 200px;
+			width: 95%;
+		}
+		#footer{
+			height: 110px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div id="nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallerywa.html">Gallery</a></li>
+		<li><a href="berita.html">About Us</a></li>
+		<li><a href="formulir.html">Contact Us</a></li>
+	</ul>
+	<script class="Waktu">
+            var waktu = new Date();
+            var jam = waktu.getHours();
+            var tgl = waktu.getDate();
+            var bln = waktu.getMonth();
+            var thn = waktu.getFullYear();
+            var hr = waktu.getDay();
+
+            var bulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+            var hari = ["Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu"];
+
+
+            if (jam >9) {
+                document.write("Selamat Pagi"+"<br>");
+            }else if (jam >12) {
+                document.write("Selamat Siang"+"<br>");
+            }else if (jam > 15) {
+                document.write("Selamat Sore"+"<br>");
+            }else{
+                document.write("Selamat Tidur"+"<br>")
+            }
+
+            document.write(hari[hr]+", "+tgl+"/"+(bulan[bln])+"/"+thn+"<br>");
+
+        </script>
+	</div>
+	<div id="content">
+		<p><b><u>MUSIC</u></b></p>
+		<p> Chanyeol EXO akan mengadakan fancon bertajuk The Eternity di Indonesia pada 9 Maret 2024. Ajang itu menjadi bagian dari rangkaian tur fancon Chanyeol di Asia.
+		Kabar tersebut juga telah dikonfirmasi oleh akun resmi media sosial EXO, Selasa (19/12). Jakarta menjadi salah satu kota yang masuk daftar awal fancon idol Kpop tersebut.
+		"CHANYEOL FANCON TOUR 'THE ETERNITY'. Jakarta, 2024.03.09," tulis akun Twitter/X resmi EXO, @weareoneEXO, pada Selasa (19/12).</p>
+		<p>Selain Jakarta, Chanyeol dipastikan menggelar fancon di dua kota lainnya. Idol bernama Park Chan-yeol itu turut menghelat fancon di Macau, China, pada 2 dan 3 Februari 2024, dilanjutkan dengan Kuala Lumpur, Malaysia, pada 2 Maret 2024.
+		Chanyeol juga masih akan mengumumkan sederet kota lain yang bakal dikunjungi dalam fancon tersebut.</p>
+	</div>
+	<div id="sidebar">
+		<p>Fancon Chanyeol EXO di Jakarta akan diboyong oleh iMe Indonesia selaku promotor. Namun, hingga kini belum ada keterangan resmi dari promotor mengenai lokasi, harga, dan jadwal penjualan tiket fancon tersebut.
+		Chanyeol akan datang seorang diri setelah beberapa kali tercatat menyambangi Indonesia bersama rekan sesama member EXO. Beberapa waktu lalu, Chanyeol bergabung dengan member EXO lainnya ketika menghadiri Meet and Greet Glow to You pada 27 Agustus 2023.</p>
+		<img src="chanyeol.jpeg">
+		<p>Ia juga pernah mengadakan fancon dengan Sehun bertajuk Back to Back Fancon. Mereka tampil sebagai duo EXO-SC di Beach City International Stadium pada 4 Februari 2023.
+		EXO-SC yang merupakan sub-unit kedua di bawah EXO dibentuk pada 2019 dan sudah merilis sebuah EP bertajuk What a Life pada Juli 2019 dan sebuah album studio pada Juli 2020 bertajuk 1 Billion Views yang berisi sembilan lagu.
+		Kedua album tersebut mencatatkan prestasi bagi EXO-SC. Subunit ini telah menjual lebih dari 900 ribu album secara kombinasi sejak mereka debut.</p>
+	</div>
+	<div id="footer">
+		<p>&copy; CopyRight 2023 - NAJWA AULIA - 231011701348</p>
+	</div>
+</div>
+</body>
+</html>

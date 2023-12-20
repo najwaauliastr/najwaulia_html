@@ -1,0 +1,160 @@
+  <!DOCTYPE html>
+<html>	
+<head>
+	<title>gallery</title>
+	<style type="text/css">
+		body{
+			background-color: #5E7496;
+		}
+		.wadah{
+			width: 800px;
+			margin: auto;
+		}
+		.gallery{
+			float: left;
+			margin: 20px;
+			width: 240px;
+			text-align: center;
+			font-family: Times New Roman;
+			font-size: 20px;
+			border: 1px solid grey;
+		}
+		img{
+			width: 240px;
+			height: 200px;
+		}
+		#container{
+			width: 1220px;
+			height: 800%;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			margin: auto;
+		}
+		#header{   
+			height: 450px;
+			background-color: #5E7496;
+			background-image: url("header.png");
+			background-size: 100% 100%;   
+			padding-top: 30px;
+		}
+		#content{
+			height: 55  0px;
+			width: 100%;
+			background-color: #3F5F90;
+			float: left;
+		}
+		#content p{
+			font-size: 20px;
+			text-align: justify;
+			padding: 5px 10px 5px 10px;
+		}
+		#footer{
+			height: 110px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+		#nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #000;
+		}
+		#nav li{
+			float: left;
+		}
+		#nav li a{
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			padding: 17px 15px;
+			text-decoration: none;
+		}
+		#nav li a:hover{
+			background-color: yellow;
+		}
+		.waktu{
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	
+	</div>
+	<div id="nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallerywa.html">Gallery</a></li>
+		<li><a href="berita.html">About Us</a></li>
+		<li><a href="formulir.html">Contact Us</a></li>
+	</ul>
+	<script class="Waktu">
+            var waktu = new Date();
+            var jam = waktu.getHours();
+            var tgl = waktu.getDate();
+            var bln = waktu.getMonth();
+            var thn = waktu.getFullYear();
+            var hr = waktu.getDay();
+
+            var bulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+            var hari = ["Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu"];
+
+
+            if (jam >9) {
+                document.write("Selamat Pagi"+"<br>");
+            }else if (jam >12) {
+                document.write("Selamat Siang"+"<br>");
+            }else if (jam > 15) {
+                document.write("Selamat Sore"+"<br>");
+            }else{
+                document.write("Selamat Tidur"+"<br>")
+            }
+
+            document.write(hari[hr]+", "+tgl+"/"+(bulan[bln])+"/"+thn+"<br>");
+
+        </script>
+	</div>
+	<div id="content">
+		<div class="gallery">
+			<img src="jazz.jfif">
+			Music Jazz
+		</div>
+		<div class="gallery">
+			<img src="POP.jfif">
+			Music POP
+		</div>
+		<div class="gallery">
+			<img src="dance.jfif">
+			Music Dance
+		</div>
+		<div class="gallery">
+			<img src="blues.jfif">
+			Music Blues
+		</div>
+		<div class="gallery">
+			<img src="country.jfif">
+			Music Country
+		</div>
+		<div class="gallery">
+			<img src="reggae.jfif">
+			Music Reggae
+		</div>
+		<div class="gallery">
+			<img src="rnb.jfif">
+			Music R&B
+		</div>
+		<div class="gallery">
+			<img src="klasik.jfif">
+			Music Classic
+		</div>
+	</div>
+	<div id="footer">
+		<p>&copy; CopyRight 2023 - NAJWA AULIA - 231011701348</p>
+	</div>
+</div>
+</body>
+</html>

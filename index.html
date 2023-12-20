@@ -1,0 +1,135 @@
+  <!DOCTYPE html>
+<html>	
+<head>
+	<title>Home</title>
+	<style type="text/css">
+		body{
+			background-color: #5E7496;
+		}
+		#container{
+			width: 1220px;
+			height: 800%;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			margin: auto;
+		}
+		#header{   
+			height: 450px;
+			background-color: #5E7496;
+			background-image: url("header.png");
+			background-size: 100% 100%;
+			padding-top: 30px;
+		}
+		#nav ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #000;
+		}
+		#nav li{
+			float: left;
+		}
+		#nav li a{
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			padding: 17px 15px;
+			text-decoration: none;
+		}
+		#nav li a:hover{
+			background-color: yellow;
+		}
+		#content{
+			height: 835px;
+			width: 50%;
+			background-color: #3F5F90;
+			float: left;
+		}
+		#content p{
+			font-size: 20px;
+			text-align: justify;
+			padding: 5px 10px 5px 10px;
+		}
+		#sidebar{
+			height: 835px;
+			width: 50%;
+			background-color:  #3F5F90;
+			float: right;    
+		} 
+		#sidebar p{
+         	font-size: 20px;
+         	text-align: justify;
+         	padding: 5px 10px 5px 10px;
+		}
+		#sidebar img{
+			height: 200px;
+			width: 95%;
+		}
+		#footer{
+			height: 110px;
+			background-color: #000;
+			clear: both;
+			font-size: 25px;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div id="nav">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="gallerywa.html">Gallery</a></li>
+		<li><a href="berita.html">About Us</a></li>
+		<li><a href="formulir.html">Contact Us</a></li>
+	</ul>
+	<script class="Waktu">
+            var waktu = new Date();
+            var jam = waktu.getHours();
+            var tgl = waktu.getDate();
+            var bln = waktu.getMonth();
+            var thn = waktu.getFullYear();
+            var hr = waktu.getDay();
+
+            var bulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+            var hari = ["Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu"];
+
+
+            if (jam >9) {
+                document.write("Selamat Pagi"+"<br>");
+            }else if (jam >12) {
+                document.write("Selamat Siang"+"<br>");
+            }else if (jam > 15) {
+                document.write("Selamat Sore"+"<br>");
+            }else{
+                document.write("Selamat Tidur"+"<br>")
+            }
+
+            document.write(hari[hr]+", "+tgl+"/"+(bulan[bln])+"/"+thn+"<br>");
+
+        </script>
+	</div>
+	<div id="content">
+		<p><b><u>MUSIC</u></b></p>
+		<p>Menurut Kamus Besar Bahasa Indonesia (KBBI), musik adalah ilmu atau seni menyusun nada atau suara dalam urutan, kombinasi, dan hubungan temporal untuk menghasilkan komposisi (suara) yang mempunyai kesatuan dan kesinambungan.
+		Kata musik berasal dari bahasa Yunani mousikos, melambangkan dewa keindahan yang menguasai bidang seni dan keilmuan. 
+		Dilansir Encyclopaedia Britannica (2015), musik merupakan seni yang memadukan suara vokal atau instrumental untuk keindahan bentuk atau ekspresi emosial.
+		Biasanya sesuai dengan standar budaya irama, melodi, dan harmoni. Musik adalah seni yang menembus setiap masyarakat manusia.</p><p>Musik adalah sebuah suara yang disusun sedemikian rupa, sehingga akan mengandung irama, lagu, keharmonisan, dimana suara yang dihasilkan dari alat-alat bisa menghasilkan sebuah irama yang indah.
+		Adapun seni musik berasal dari 2 kata yaitu “seni” dan “musik”, makna seni merupakan hasil cipta, rasa dan karsa manusia dimana di nyatakan dalam berbagai sarana didalamnya.
+		Sementara musik ialah hasil pengolahan suara, melodi, harmoni dan ritme, vokal serta tempo.</p>
+	</div>
+	<div id="sidebar">
+		<p>Musik sudah dikenal manusia sejam zaman Homo Sapiens sekitar 180.000 hingga 100.000 tahun yang lalu. Pada awal abad ke-20, musik dianggap sebagai hal biasa. Di mana nada musik ditandai oleh keteraturan getarannya. Keseragamam tersebut memberinya nada yang tetap dan membedakan suaranya dari kebisingan. Dalam buku Sejarah Musik dan Apresiasi di Asia (2012) karya Sila Widyatama, musik adalah penghayatan isi hati manusia yang diungkapkan dalam bentuk bunyi yang teratur dengan melodi atau ritme serta mempunyai unsur atau keselaran yang indah. Istilah musik dikenal dari bahaya Yunani yaitu "musike". Musike berasal dari perkataan muse-muse, yaitu sembilan dewa-dewa Yunani di bawah dewa Apollo yang melindungi seni dan ilmu pengetahuan. Dalam metodologi Yunani Kuno memiliki arti suatu keindahan yang terjadinya berasal dari kemurahan hati para dewa-dewa yang diwujudkan sebagai bakat.</p>
+		<img src="download.jfif">
+		<p>Kemudian pengertian itu ditegaskan okel Pythagoras, bahwa musik bukanlah sekedar hadiah (bakat) dari dewa-dewa, tapi musik terjadi karena akal budi manusia dalam membentuk teori-teori. Pythagoras, yang merupakan numerolog musik pertama dan meletakkan dasar untuk akustik. Dalam akustik orang-orang Yunani menemukan korespondensi antara nada not dan panjang string.
+		</p>
+	</div>
+	<div id="footer">
+		<p>&copy; CopyRight 2023 - NAJWA AULIA - 231011701348</p>
+	</div>
+</div>
+</body>
+</html>
